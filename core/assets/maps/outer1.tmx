@@ -21,7 +21,7 @@
  <tileset firstgid="38401" name="Misc5" tilewidth="8" tileheight="48" margin="8">
   <image source="tiles/Misc5.png" width="1024" height="1536"/>
  </tileset>
- <layer name="foreground" width="30" height="30">
+ <layer name="background" width="30" height="30">
   <properties>
    <property name="layer" value="foreground"/>
   </properties>
@@ -29,7 +29,7 @@
    eJztVdkOgzAMg/42x49zaIWRzjgxsONtRKrappsbJ6mpqttuu+0framrqs2jy6Ovf4+Hez4b85jymD+8H/EGwsM9n7XJx4Lrs1gQr0lPvC6PPr32TXA2Jh8Lrm2WfAFv2PCmPGbYL/h8xv9dYll5bmubJV/CYyzE57zyf1ee29pmzjdjYMzcq8h7pBzKmETvsX/xWcyl3tTPmIuzezhvyj8D51Jv6mfM69k9XAPl76E25t/xE72u8FT/cLyW6917Rn6i120f6Veka+4NJK8VR/rV13E98M1GfvcGsJ8Fnu2PdKq8PeFnTHyDUX2xpk4zAX8W+EprduugvhZ/xMO96aC/VZ/t1kF9Lf6IB8esdNVpJectqG/RJZuJN8asuLK5nG940TdDaSb+/grXMOemUcCLeznSwav3XeFe7qNeVjr4qanvovmv6uO3dqaP79oDy6B4pA==
   </data>
  </layer>
- <layer name="foreground" width="30" height="30">
+ <layer name="background" width="30" height="30">
   <properties>
    <property name="layer" value="foreground"/>
   </properties>
@@ -37,7 +37,7 @@
    eJztkzkOADEIA2nYKser4d1LTWfJIo3nARkyks2EEEIIwcCX2bfmvVHOfOD1Xf/dpLeAdlHOJHmRdn7qxsPxIu2inEnyIu381o2X4+3tprbS201tpbdjbgWBuRUE5lYQmFtBYG7lBT9v7AwW
   </data>
  </layer>
- <layer name="foreground" width="30" height="30">
+ <layer name="background" width="30" height="30">
   <properties>
    <property name="layer" value="foreground"/>
   </properties>
@@ -45,7 +45,7 @@
    eJzt01dPmmEYBmAO1aoJUKYMQQGZ/5W9ZDjZ/MZePWhiGpvWUY+4k+vkhfe7efJ8BAKH/EzsKBCIkyDJBSnSZMhySY48V1xTOPpYb9/9AUNGjLllwpQZc+6454FHnnhmwfKNvyF6bF7iJEhyQYo0GbJckiPPFdcUKFLihjKV4z93tX3WoUuPPgOGjBhzy4QpM+bccc8DjzzxzIIlK9Zs2L7SHz4JBL4TIUqMOAmSXJAiTYYsl+TIc8U1BYqUuKFMhSq1k1fmddahS48+A4aMGHPLhCkz5txxzwOPPPHMgiUr1mzYvuiN2H2U8DfzEiFKjDgJklyQIk2GLJfkyHPFNQWKlLihTIUqNeq6GjTp0XbWoUuPPgOGjBhzy4QpM+bccc8DjzzxzIIlK9Zs2LLTtSdo1yHCp+YlQpQYcRIkT//9v1Dw3SIlbihToUqNuq4GTVq0nXXo0qPPgOEbOl9m4d6SFWs2bNnp2hO06xDhM/MSIUqMOImz9/X+Stn9ClVq1HU1aNKi7axDl94Hu15m5VlrNmzZ6doTtOsQ4XPznn9e3++penaNuq4GTVq0nXX+Y+/Gs7fsdO0J2nXone/Oe1LX1aBJ6wt7d7r2BO069Inv0d9S19WgSesLe3e69l/Yd8ghhxzy0fwAIj53gg==
   </data>
  </layer>
- <layer name="foreground" width="30" height="30">
+ <layer name="background" width="30" height="30">
   <properties>
    <property name="layer" value="foreground"/>
   </properties>
@@ -109,7 +109,7 @@
    eJztzSEBACAQBLBzIL75lwZJAhBsBZYAAHAancx+8NZ+6/4L/GsBX5gBTQ==
   </data>
  </layer>
- <layer name="background" width="30" height="30">
+ <layer name="foreground" width="30" height="30">
   <properties>
    <property name="layer" value="background"/>
   </properties>

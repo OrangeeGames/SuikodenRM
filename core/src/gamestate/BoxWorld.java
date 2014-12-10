@@ -172,94 +172,6 @@ public class BoxWorld extends GameState {
 				}
 			}
 			
-			/*
-			Object layerType = ml.getProperties().get("layer");
-			if(layerType != null) {
-				String layerTypeString = layerType.toString();
-				
-				System.out.println(layerTypeString);
-				if(layerTypeString.equals("chests")) {
-					System.out.println("Testttt");
-				}
-				if(layerTypeString.equals("foreground")) {
-					System.out.println("Test1");
-					foregrounds.add((TiledMapTileLayer) ml);
-				}
-				if(layerTypeString.equals("background")) {
-					System.out.println("Test2");
-					backgrounds.add((TiledMapTileLayer) ml);
-				}
-				if(layerTypeString.equals("objects")) {
-					System.out.println("Test3");
-					objectLayers.add((TiledMapTileLayer) ml);
-				}
-				if(layerTypeString.equals("chests")) {
-					System.out.println("Test4");
-					Iterator<MapObject> moIterator = ml.getObjects().iterator();
-					while(moIterator.hasNext()) {
-						RectangleMapObject mo = (RectangleMapObject) moIterator.next();
-						AbstractChest ac = new AbstractChest(false, this, (mo.getRectangle().x + mo.getRectangle().width/2)*SuikodenRM.scale, (mo.getRectangle().y + mo.getRectangle().height/2)*SuikodenRM.scale);
-						drawableBoxes.add(ac);
-						System.out.println(mo.getRectangle().x);
-						//AbstractChest ac = new AbstractChest(false, this, 180, 180);
-						System.out.println("Test5");
-					}
-				}
-				if(layerTypeString.equals("doors")) {
-					System.out.println("Doors");
-					Iterator<MapObject> moIterator = ml.getObjects().iterator();
-					while(moIterator.hasNext()) {
-						RectangleMapObject mo = (RectangleMapObject) moIterator.next();
-						
-						String toName = (String) mo.getProperties().get("toName");
-						Integer toNumber = Integer.parseInt((String) mo.getProperties().get("toSpawnNumber"));
-						System.out.println(toName);
-						System.out.println(toNumber);
-						PolygonShape ps = new PolygonShape();
-						ps.setAsBox((mo.getRectangle().width/2)*SuikodenRM.scale, (mo.getRectangle().height/2)*SuikodenRM.scale);
-						FixtureDef fixtureDoor = new FixtureDef();
-						fixtureDoor.filter.categoryBits = DOOR;
-						fixtureDoor.filter.maskBits = PLAYER;
-						fixtureDoor.isSensor = true;
-						fixtureDoor.shape = ps;
-						BodyDef doorBodyDef = new BodyDef();
-						doorBodyDef.position.set(new Vector2((mo.getRectangle().x + mo.getRectangle().width/2)*SuikodenRM.scale, (mo.getRectangle().y + mo.getRectangle().height/2)*SuikodenRM.scale));
-						Body doorBody = world.createBody(doorBodyDef);
-						
-						doorBody.createFixture(fixtureDoor);
-						Door newDoor = new Door(toName, toNumber, door.toMapName, door.toMapNumber);
-						doorBody.setUserData(newDoor);
-					}
-				}
-				if(layerTypeString.equals("spawns")) {
-					System.out.println("Spawny Time");
-					Iterator<MapObject> moIterator = ml.getObjects().iterator();
-					while(moIterator.hasNext()) {
-						RectangleMapObject mo = (RectangleMapObject) moIterator.next();
-						
-						int spawnNumber = Integer.parseInt((String) mo.getProperties().get("spawnNumber"));
-						
-						float x = mo.getRectangle().x*SuikodenRM.scale;
-						float y = mo.getRectangle().y*SuikodenRM.scale;
-						
-						mapSpawns.add(new Spawn(spawnNumber, x, y));
-					}
-				}
-				if(layerTypeString.equals("characters")) {
-					System.out.println("Character Generation");
-					Iterator<MapObject> moIterator = ml.getObjects().iterator();
-					while(moIterator.hasNext()) {
-						RectangleMapObject mo = (RectangleMapObject) moIterator.next();
-						
-						float x = (mo.getRectangle().x + mo.getRectangle().width/2)*SuikodenRM.scale;
-						float y = (mo.getRectangle().y + mo.getRectangle().height/2)*SuikodenRM.scale;
-						
-						GameCharacter gc = CharacterGeneration.getCharacter((String) mo.getProperties().get("character"), this, x, y);
-						gc.setMessage(Integer.parseInt((String) mo.getProperties().get("startMessage")), Integer.parseInt((String) mo.getProperties().get("stopMessage")));
-						drawableBoxes.add(gc);
-					}
-				}*/
-			
 		}
 		
 		BodyDef playerDef = new BodyDef();
@@ -377,14 +289,14 @@ public class BoxWorld extends GameState {
 			mapRenderer.setView(camera);
 			mapRenderer.getBatch().begin();
 			
-			for(TiledMapTileLayer foreground : foregrounds) {
-				mapRenderer.renderTileLayer(foreground);
+			for(TiledMapTileLayer background : backgrounds) {
+				mapRenderer.renderTileLayer(background);
 			}
 			
 			mapRenderer.renderTileLayer(objectLayers, drawableBoxes);
-			
-			for(TiledMapTileLayer background : backgrounds) {
-				mapRenderer.renderTileLayer(background);
+
+			for(TiledMapTileLayer foreground : foregrounds) {
+				mapRenderer.renderTileLayer(foreground);
 			}
 			
 			mapRenderer.getBatch().end();
