@@ -1,0 +1,382 @@
+
+atlas.png
+size: 256,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+buttondown
+  rotate: false
+  xy: 132, 192
+  size: 16, 16
+  split: 7, 7, 7, 7
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+buttoneggstra
+  rotate: false
+  xy: 132, 192
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+chest
+  rotate: false
+  xy: 2, 17
+  size: 30, 25
+  orig: 30, 25
+  offset: 0, 0
+  index: 2
+chest
+  rotate: false
+  xy: 76, 118
+  size: 26, 20
+  orig: 26, 20
+  offset: 0, 0
+  index: 1
+head-killey
+  rotate: false
+  xy: 2, 44
+  size: 56, 64
+  orig: 56, 64
+  offset: 0, 0
+  index: -1
+head-leknaat
+  rotate: false
+  xy: 76, 190
+  size: 54, 64
+  orig: 54, 64
+  offset: 0, 0
+  index: -1
+killeyWalkDown
+  rotate: false
+  xy: 76, 140
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 1
+player
+  rotate: false
+  xy: 76, 140
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: -1
+killeyWalkDown
+  rotate: false
+  xy: 102, 140
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 2
+killeyWalkDown
+  rotate: false
+  xy: 60, 60
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 3
+killeyWalkLeft
+  rotate: false
+  xy: 128, 140
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 1
+killeyWalkLeft
+  rotate: false
+  xy: 154, 160
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 2
+killeyWalkLeft
+  rotate: false
+  xy: 180, 155
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 3
+killeyWalkUp
+  rotate: false
+  xy: 206, 155
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 1
+killeyWalkUp
+  rotate: false
+  xy: 154, 110
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 2
+killeyWalkUp
+  rotate: false
+  xy: 180, 105
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: 3
+leftupperchat
+  rotate: false
+  xy: 2, 2
+  size: 14, 13
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+upleftchat
+  rotate: false
+  xy: 2, 2
+  size: 14, 13
+  split: 6, 7, 6, 6
+  pad: 6, 7, 7, 2
+  orig: 14, 13
+  offset: 0, 0
+  index: -1
+leknaatWalkDown
+  rotate: false
+  xy: 206, 107
+  size: 24, 46
+  orig: 24, 46
+  offset: 0, 0
+  index: 1
+leknaatWalkDown
+  rotate: false
+  xy: 86, 70
+  size: 23, 46
+  orig: 23, 46
+  offset: 0, 0
+  index: 3
+leknaatWalkDown
+  rotate: false
+  xy: 111, 45
+  size: 24, 45
+  orig: 24, 45
+  offset: 0, 0
+  index: 2
+leknaatWalkLeft
+  rotate: false
+  xy: 232, 157
+  size: 19, 46
+  orig: 19, 46
+  offset: 0, 0
+  index: 1
+leknaatWalkLeft
+  rotate: false
+  xy: 232, 110
+  size: 19, 45
+  orig: 19, 45
+  offset: 0, 0
+  index: 2
+leknaatWalkLeft
+  rotate: false
+  xy: 189, 58
+  size: 19, 45
+  orig: 19, 45
+  offset: 0, 0
+  index: 3
+leknaatWalkUp
+  rotate: false
+  xy: 111, 92
+  size: 24, 46
+  orig: 24, 46
+  offset: 0, 0
+  index: 1
+leknaatWalkUp
+  rotate: false
+  xy: 137, 46
+  size: 24, 46
+  orig: 24, 46
+  offset: 0, 0
+  index: 2
+leknaatWalkUp
+  rotate: false
+  xy: 163, 57
+  size: 24, 46
+  orig: 24, 46
+  offset: 0, 0
+  index: 3
+metatag
+  rotate: false
+  xy: 34, 26
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+neat9patch
+  rotate: false
+  xy: 194, 234
+  size: 60, 20
+  split: 5, 5, 5, 5
+  pad: 24, 24, 6, 6
+  orig: 60, 20
+  offset: 0, 0
+  index: -1
+neat9patch2
+  rotate: false
+  xy: 132, 227
+  size: 60, 27
+  split: 5, 47, 5, 21
+  pad: 5, 5, 12, 5
+  orig: 60, 27
+  offset: 0, 0
+  index: -1
+neattry
+  rotate: false
+  xy: 194, 212
+  size: 60, 20
+  split: 54, 5, 5, 5
+  pad: 23, 21, 0, 5
+  orig: 60, 20
+  offset: 0, 0
+  index: -1
+player1
+  rotate: false
+  xy: 2, 110
+  size: 72, 144
+  orig: 72, 144
+  offset: 0, 0
+  index: -1
+player2
+  rotate: false
+  xy: 222, 35
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+rightupperchat
+  rotate: false
+  xy: 210, 53
+  size: 41, 5
+  orig: 41, 5
+  offset: 0, 0
+  index: -1
+uprightchat
+  rotate: false
+  xy: 210, 53
+  size: 41, 5
+  split: 0, 5, 0, 5
+  orig: 41, 5
+  offset: 0, 0
+  index: -1
+riouWalkDown
+  rotate: false
+  xy: 137, 2
+  size: 18, 42
+  orig: 18, 42
+  offset: 0, 0
+  index: 2
+riouWalkDown
+  rotate: false
+  xy: 60, 14
+  size: 18, 44
+  orig: 18, 44
+  offset: 0, 0
+  index: 1
+riouWalkDown
+  rotate: false
+  xy: 80, 14
+  size: 18, 44
+  orig: 18, 44
+  offset: 0, 0
+  index: 3
+riouWalkLeft
+  rotate: false
+  xy: 137, 94
+  size: 15, 44
+  orig: 15, 44
+  offset: 0, 0
+  index: 2
+riouWalkLeft
+  rotate: false
+  xy: 163, 12
+  size: 18, 43
+  orig: 18, 43
+  offset: 0, 0
+  index: 3
+riouWalkLeft
+  rotate: false
+  xy: 183, 11
+  size: 17, 44
+  orig: 17, 44
+  offset: 0, 0
+  index: 1
+riouWalkUp
+  rotate: false
+  xy: 210, 60
+  size: 18, 45
+  orig: 18, 45
+  offset: 0, 0
+  index: 1
+riouWalkUp
+  rotate: false
+  xy: 230, 60
+  size: 18, 45
+  orig: 18, 45
+  offset: 0, 0
+  index: 3
+riouWalkUp
+  rotate: false
+  xy: 202, 8
+  size: 18, 43
+  orig: 18, 43
+  offset: 0, 0
+  index: 2
+shop
+  rotate: false
+  xy: 222, 17
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 1
+shop
+  rotate: false
+  xy: 34, 8
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: 2
+unchat
+  rotate: false
+  xy: 132, 210
+  size: 60, 15
+  split: 5, 5, 0, 5
+  pad: 23, 25, 3, 7
+  orig: 60, 15
+  offset: 0, 0
+  index: -1
+underchat
+  rotate: false
+  xy: 132, 210
+  size: 60, 15
+  orig: 60, 15
+  offset: 0, 0
+  index: -1
+upchat
+  rotate: false
+  xy: 194, 205
+  size: 60, 5
+  split: 5, 5, 0, 5
+  orig: 60, 5
+  offset: 0, 0
+  index: -1
+upperchat
+  rotate: false
+  xy: 194, 205
+  size: 60, 5
+  orig: 60, 5
+  offset: 0, 0
+  index: -1
+
+atlas2.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+atlas/player
+  rotate: false
+  xy: 2, 2
+  size: 512, 256
+  orig: 512, 256
+  offset: 0, 0
+  index: -1

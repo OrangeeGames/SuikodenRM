@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="8" tileheight="8">
+ <tileset firstgid="1" name="Misc1" tilewidth="16" tileheight="16">
+  <image source="../../../../Suiko-Test/core/maps/tiles/Misc1.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="6145" name="Misc2" tilewidth="16" tileheight="16">
+  <image source="../../../../Suiko-Test/core/maps/tiles/Misc2.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="12289" name="Misc5" tilewidth="16" tileheight="16">
+  <image source="../../../../Suiko-Test/core/maps/tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="18433" name="Misc28x8" tilewidth="8" tileheight="8">
+  <image source="../../../../Suiko-Test/core/maps/tiles/Misc2.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="43009" name="Misc18x8" tilewidth="8" tileheight="8">
+  <image source="../../../../Suiko-Test/core/maps/tiles/Misc1.png" width="1024" height="1536"/>
+ </tileset>
+ <layer name="roofs" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt2EmO2mAQQGE3xgOgDJsA120bD8A6wIlg08OV8nZAFMn2H3U7Cu+T3gZELUoWJYgiSZIkSVL8EkVTSiiljHKa0ZwWL//W3P9dyV42VFFNDbW0pR3tb/b2dI6iCcU0pYRSyig/h88Vu2UfE4pf2S0llFJGOc1oTovX62ee2XlBJW2oopoaas/hc8Vu2VlBJXvZUEU1NdTSlna0v9nb04VdU0xTSiiljPJL+FyxW/YxofiN3VJCKWWU04zmtHi7fuaZnRdU0oYqqqmh9hI+V+yWnRVUspcNVVRTQy1taUf7m731uR8hc8Vu2ceE4nd2SwmllFFOM5rT4v36mV73I2Cu2C07K6hkLxuqqKaGWtrSjvY3e+t1PwLmit2yjwl9oa9/2M03Xvv+2+u97kfAXLFbdlIM3Euv+xEwV2H63A99nj73Q5+nz/3Q5xny/5U+nvfj4/3gt/SSVrTu+E8p5H4Mma8o+smODnSkU8e+Qu7HkPni+eW39JJWtO74TynkfgyZL55fdnSgI5069hVyP4bMF88vv6WXtKJ1x+/qoPsxYL54ftnRgY506thX0P0YMP9RdH3vj/3+o+n63h/7/UfT9b0/9vuPput7f+z3H83Y98H7cW/s++D9uDf2ffB+3Bv7Png/JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS9Dd+AaGv7+s=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T+1lC6AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAbnEAAAQ==
+  </data>
+ </layer>
+</map>

@@ -1,0 +1,40 @@
+
+player.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+Tile1
+  rotate: false
+  xy: 1, 51
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+Tile2
+  rotate: false
+  xy: 131, 51
+  size: 128, 128
+  orig: 128, 128
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 1, 1
+  size: 24, 48
+  orig: 24, 48
+  offset: 0, 0
+  index: -1
+player1
+  rotate: false
+  xy: 261, 35
+  size: 72, 144
+  orig: 72, 144
+  offset: 0, 0
+  index: -1
+player2
+  rotate: false
+  xy: 335, 163
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1

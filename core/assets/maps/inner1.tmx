@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="30" height="30" tilewidth="8" tileheight="8">
+ <properties>
+  <property name="name" value="inner1"/>
+ </properties>
+ <tileset firstgid="1" name="Misc5" tilewidth="8" tileheight="8">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="24577" name="Misc2" tilewidth="16" tileheight="16">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="30721" name="Misc1" tilewidth="32" tileheight="32">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="32257" name="Misc1" tilewidth="16" tileheight="32">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="35329" name="Misctest" tilewidth="8" tileheight="64">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <tileset firstgid="38401" name="Misc5" tilewidth="8" tileheight="48" margin="8">
+  <image source="tiles/Misc5.png" width="1024" height="1536"/>
+ </tileset>
+ <layer name="foreground" width="30" height="30">
+  <properties>
+   <property name="layer" value="foreground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztVdkOgzAMg/42x49zaIWRzjgxsONtRKrappsbJ6mpqttuu+0framrqs2jy6Ovf4+Hez4b85jymD+8H/EGwsM9n7XJx4Lrs1gQr0lPvC6PPr32TXA2Jh8Lrm2WfAFv2PCmPGbYL/h8xv9dYll5bmubJV/CYyzE57zyf1ee29pmzjdjYMzcq8h7pBzKmETvsX/xWcyl3tTPmIuzezhvyj8D51Jv6mfM69k9XAPl76E25t/xE72u8FT/cLyW6917Rn6i120f6Veka+4NJK8VR/rV13E98M1GfvcGsJ8Fnu2PdKq8PeFnTHyDUX2xpk4zAX8W+EprduugvhZ/xMO96aC/VZ/t1kF9Lf6IB8esdNVpJectqG/RJZuJN8asuLK5nG940TdDaSb+/grXMOemUcCLeznSwav3XeFe7qNeVjr4qanvovmv6uO3dqaP79oDy6B4pA==
+  </data>
+ </layer>
+ <layer name="foreground" width="30" height="30">
+  <properties>
+   <property name="layer" value="foreground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztkzkOADEIA2nYKser4d1LTWfJIo3nARkyks2EEEIIwcCX2bfmvVHOfOD1Xf/dpLeAdlHOJHmRdn7qxsPxIu2inEnyIu381o2X4+3tprbS201tpbdjbgWBuRUE5lYQmFtBYG7lBT9v7AwW
+  </data>
+ </layer>
+ <layer name="foreground" width="30" height="30">
+  <properties>
+   <property name="layer" value="foreground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt01dPmmEYBmAO1aoJUKYMQQGZ/5W9ZDjZ/MZePWhiGpvWUY+4k+vkhfe7efJ8BAKH/EzsKBCIkyDJBSnSZMhySY48V1xTOPpYb9/9AUNGjLllwpQZc+6454FHnnhmwfKNvyF6bF7iJEhyQYo0GbJckiPPFdcUKFLihjKV4z93tX3WoUuPPgOGjBhzy4QpM+bccc8DjzzxzIIlK9Zs2L7SHz4JBL4TIUqMOAmSXJAiTYYsl+TIc8U1BYqUuKFMhSq1k1fmddahS48+A4aMGHPLhCkz5txxzwOPPPHMgiUr1mzYvuiN2H2U8DfzEiFKjDgJklyQIk2GLJfkyHPFNQWKlLihTIUqNeq6GjTp0XbWoUuPPgOGjBhzy4QpM+bccc8DjzzxzIIlK9Zs2LLTtSdo1yHCp+YlQpQYcRIkT//9v1Dw3SIlbihToUqNuq4GTVq0nXXo0qPPgOEbOl9m4d6SFWs2bNnp2hO06xDhM/MSIUqMOImz9/X+Stn9ClVq1HU1aNKi7axDl94Hu15m5VlrNmzZ6doTtOsQ4XPznn9e3++penaNuq4GTVq0nXX+Y+/Gs7fsdO0J2nXone/Oe1LX1aBJ6wt7d7r2BO069Inv0d9S19WgSesLe3e69l/Yd8ghhxzy0fwAIj53gg==
+  </data>
+ </layer>
+ <layer name="foreground" width="30" height="30">
+  <properties>
+   <property name="layer" value="foreground"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz7kNwDAMBEGG1q+29atkr4sg4IALTMoDRSzLsizL+nvhEYlIyCioj/7uYGNiYePgKu46J+IREJGQUVCd3m7jdsfAxMLGwVXa/X51nn8REJGQUVC9zu5X43bHwMTCxsFV3HWBfxEQkZBRUIPebuN2x8DEwsbBVd61rL/3AodRFOE=
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzyESADAIA0EMFfBueHf5QCRT0Vt3KhMzAL/xMDuhe0vNRofuLZ7zL3Vvqdno1A0AAPDaBd47BQE=
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztz7sNACAMA9G0gTAzFQWfofEUQUj3JNcnmwEAkMvDrER+d6q5HnS96a9WtWh53dH1V72tncQuAOAfF0JRBIE=
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt0sEJwDAMQ1G1ycFZs6OEDF51AhPqQyn/gTD4YF8kAcC/HCGdTnN65Puyv5c0nx+eK/J92d/h205z+sj3+Kaqfu7eqern7p2qftJzAHjnBjigCNU=
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRQAmYyTMw9kryDoy9IxUsrCBNnFqAEZi+mICYGYhZeAiLUws0As1sAuJmIG7hISw+CgYnAKXPJm5gfAFxCzdl5pACqJU+STWHWulzNJ2PgpEEANFlEKo=
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzzEKwCAQRNFpDLiCHjmVQnKv3CtrYZFKQpJJM68RZOEzgIiI3LFlYM/8biyAFV5v7DxWf4ld9s6BvZMlGLDY9a9v/Vr1ZrP53dtC8r2J363ebD90RUSeOgGFRgo/
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztlNsJg0AQRS8JCAZmZruKfaSJVBAfEN1PC7SQ3AIimLiMCHPg4I/rwf24QBAEQXAmLjNwnf3PtwZ09n937/lvVHWZ7/QKDLr9/Vehbs37uBW+ky30bA4HdINgDRFAqdEkft37AxjZa/jMjl3h3ig1mn7Ynr282RrpRLNjV7g3So0mx+1Znvxf9iaaY/NW+QDZ2xF/
+  </data>
+ </layer>
+ <layer name="2.5" width="30" height="30">
+  <properties>
+   <property name="layer" value="objects"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJztzSEBACAQBLBzIL75lwZJAhBsBZYAAHAancx+8NZ+6/4L/GsBX5gBTQ==
+  </data>
+ </layer>
+ <layer name="background" width="30" height="30">
+  <properties>
+   <property name="layer" value="background"/>
+  </properties>
+  <data encoding="base64" compression="zlib">
+   eJzt1LkOgkAUhWFKC5ZCO2QblheWjn19Tn+jxHHEwoRMNTf5ggx4DxcClmXKlClTpkyZ0l2+Y1lXR19eTlaBCrXG3IWsFb7LvK6+3JysAhVqjbkLWSt8j3k9fbk5WQUq1BpzF7JWXE5PAbOHiBAfeN8TegmkyHA+vTNLNKy16NAfmDvQa8SEWcrdtgGzh4gQH3jfE3oJpMi8z9ztd8t6h/7A3IFeIybM3ve8Z+UaAt7tEBHiP74rCecKpMic3zm31/NVcxv+06JD/0fuwLkjJuezp5yn7qtr8nX4Nu85AoSIECOBQIrM3u9528mUj5XKvrxe0bNGgxYdegwYMWG29/up24c7O0M92g==
+  </data>
+ </layer>
+ <objectgroup name="box2D">
+  <object name="abc" type="object" x="0" y="144">
+   <polyline points="0,0 8,-16 24,-32 32,-40 40,-48 56,-56 72,-64 88,-64 96,-72 112,-72 136,-72 176,-64 200,-48 216,-32 232,-8 232,16 232,32 224,48 216,64 192,80 160,88 80,88 40,72 24,56 8,32 0,0"/>
+  </object>
+  <object name="asdgbv" type="object" x="112" y="64" width="16" height="32"/>
+  <object name="asdgbn" type="object" x="144" y="64" width="16" height="24"/>
+  <object name="asdghjnr" type="object" x="208" y="128" width="16" height="32"/>
+  <object name="beddown" type="object" x="40" y="168">
+   <polygon points="0,0 -8,8 -8,24 24,24 24,8 16,0"/>
+  </object>
+  <object name="sometin" type="object" x="136" y="184">
+   <polygon points="0,0 -8,8 -8,32 0,40 16,40 24,32 24,8 16,0"/>
+  </object>
+  <object name="beddown" type="object" x="88" y="120">
+   <polygon points="0,0 -8,8 -8,24 24,24 24,8 16,0"/>
+  </object>
+  <object name="beddown" type="object" x="136" y="120">
+   <polygon points="0,0 -8,8 -8,24 24,24 24,8 16,0"/>
+  </object>
+  <object name="beddown" type="object" x="184" y="168">
+   <polygon points="0,0 -8,8 -8,24 24,24 24,8 16,0"/>
+  </object>
+  <object name="bedtop" type="object" x="88" y="88">
+   <polygon points="0,0 -8,8 -8,16 0,24 16,24 24,16 24,8 16,0"/>
+  </object>
+  <object name="bedtop" type="object" x="136" y="88">
+   <polygon points="0,0 -8,8 -8,16 0,24 16,24 24,16 24,8 16,0"/>
+  </object>
+  <object name="bedtop" type="object" x="40" y="136">
+   <polygon points="0,0 -8,8 -8,16 0,24 16,24 24,16 24,8 16,0"/>
+  </object>
+  <object name="bedtop" type="object" x="184" y="136">
+   <polygon points="0,0 -8,8 -8,16 0,24 16,24 24,16 24,8 16,0"/>
+  </object>
+  <object type="object" x="8" y="136">
+   <polygon points="0,0 8,-8 16,0 8,8"/>
+  </object>
+  <object type="object" x="16" y="120">
+   <polygon points="0,0 8,-8 16,0 8,8"/>
+  </object>
+  <object type="object" x="32" y="104">
+   <polygon points="0,0 8,-8 16,0 8,8"/>
+  </object>
+  <object type="object" x="52" y="104" width="8" height="8">
+   <ellipse/>
+  </object>
+  <object type="object" x="180" y="102" width="8" height="8">
+   <ellipse/>
+  </object>
+  <object type="object" x="202" y="138">
+   <polygon points="0,0 0,-9 10,-13 14,-8"/>
+  </object>
+  <object type="object" x="117" y="158" width="8" height="8">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="chests">
+  <properties>
+   <property name="layer" value="chests"/>
+  </properties>
+  <object x="80" y="160" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup name="doors">
+  <properties>
+   <property name="layer" value="doors"/>
+  </properties>
+  <object name="outer1" type="1" x="96" y="224" width="48" height="8">
+   <properties>
+    <property name="toName" value="outer1"/>
+    <property name="toSpawnNumber" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="spawns">
+  <properties>
+   <property name="layer" value="spawns"/>
+  </properties>
+  <object name="spawn1" type="1" x="112" y="200" width="8" height="8">
+   <properties>
+    <property name="spawnNumber" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="characters">
+  <properties>
+   <property name="layer" value="characters"/>
+  </properties>
+  <object x="180" y="116" width="13" height="14">
+   <properties>
+    <property name="character" value="Killey"/>
+    <property name="startMessage" value="0"/>
+    <property name="stopMessage" value="3"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
