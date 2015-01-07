@@ -214,4 +214,10 @@ public class MenuState extends GameState {
 	public void touchUp(int screenX, int screenY, int pointer, int button) {
 		stage.touchUp(screenX, screenY, pointer, button);
 	}
+
+	@Override
+	public void touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		
+	}
 }

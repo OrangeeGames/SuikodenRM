@@ -1,13 +1,15 @@
 package gamestate;
 
+import menus.MenuTestState;
 import animations.ImageCache;
 
 import com.badlogic.gdx.InputProcessor;
 import com.orangeegames.suikorm.SuikodenRM;
 
 import entities.Door;
-import entities.GameCharacter;
+import entities.GameWorldCharacter;
 import fighting.FightingState;
+import fighting.FightingTestState;
 
 public class GameStateManager implements InputProcessor{
 
@@ -59,16 +61,15 @@ public class GameStateManager implements InputProcessor{
 		gameState[currentState].pause();
 		currentState = MENUSTATE;
 		PAUSED = true;
-		gameState[currentState] = new InfoState(oldState, oldStateNumber, "Paused");
+		//gameState[currentState] = new InfoState(oldState, oldStateNumber, "Paused");
+		gameState[currentState] = new MenuTestState(oldState, oldStateNumber, "Paused");
 		relation.changeScreen();
 	}
 	
 	public void setFightState() {
-		BoxWorld oldState = (BoxWorld) gameState[currentState];
-		int oldStateNumber = currentState;
 		gameState[currentState].pause();
 		currentState = ATTACKSTATE;
-		gameState[currentState] = new FightingState(oldState, oldStateNumber);
+		gameState[currentState] = new FightingTestState();
 		relation.changeScreen();
 	}
 	
@@ -96,7 +97,7 @@ public class GameStateManager implements InputProcessor{
 		relation.changeScreen();
 	}
 	
-	public void setMessage(GameCharacter character) {
+	public void setMessage(GameWorldCharacter character) {
 		BoxWorld oldState = (BoxWorld) gameState[currentState];
 		int oldStateNumber = currentState;
 		gameState[currentState].pause();
@@ -142,6 +143,7 @@ public class GameStateManager implements InputProcessor{
 
 	@Override
 	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		gameState[currentState].touchDragged(screenX, screenY, pointer);
 		return false;
 	}
 

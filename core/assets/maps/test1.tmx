@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="8" tileheight="8">
+ <tileset firstgid="1" name="testingOverworld" tilewidth="8" tileheight="8">
+  <image source="tiles/testingOverworld.png" width="512" height="512"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt1SsSwgAQRMGtyglyaX4KsIAlWOB0OMZgMRFhqRbt56kZq2oEAAAAAPhBq6FqHZth+S1zbLN/17wBAL75l8/eZ/8hjs07Ttl/jkvzjmv2T3Fr3nHP/kc8G3S8Zlh6uw4dOoCPN02x9LQ=
+  </data>
+ </layer>
+ <layer name="Tile Layer 2" width="50" height="50">
+  <data encoding="base64" compression="zlib">
+   eJzt01EKgkAUheExYSrNHkNX1kJclbhFi25gkAPqjSHvCP8HB1R8OGdQ5wAAAAAAAAAAAABsrf66vpm1iBd2v5u0iFOvv7IbjXWBP2mtC/xoGNPl0+dPycOgj5bPnDtKTpKzpJCUkoukklzH9Ifp/TspWdrhM93OFMz19DvcEUbznaWyQ9s5/CfCPdY7Pls0Z59CVyDGCxTFCrk=
+  </data>
+ </layer>
+</map>

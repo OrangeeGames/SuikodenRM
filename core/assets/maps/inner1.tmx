@@ -211,5 +211,12 @@
     <property name="stopMessage" value="3"/>
    </properties>
   </object>
+  <object x="55" y="117.333" width="14" height="14">
+   <properties>
+    <property name="character" value="Clive"/>
+    <property name="startMessage" value="0"/>
+    <property name="stopMessage" value="0"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

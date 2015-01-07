@@ -9,4 +9,5 @@ public abstract class GameState implements Screen{
 	public abstract void keyReleased(int k);
 	public abstract void touchDown(int screenX, int screenY, int pointer, int button);
 	public abstract void touchUp(int screenX, int screenY, int pointer, int button);
+	public abstract void touchDragged(int screenX, int screenY, int pointer);
 }

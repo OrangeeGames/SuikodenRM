@@ -6,7 +6,9 @@ import animations.ImageCache;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Skin;
@@ -23,12 +25,16 @@ public class FightingState extends GameState{
 	Stage stage;
 	Table table1, table2, table3, mainTable;
 	
+	OrthographicCamera camera;
+	OrthogonalTiledMapRenderer renderer;
+	
+	
 	int[] monsters;
 	BoxWorld bw;
 	int oldStateNumber;
 	
 	public FightingState(BoxWorld bw, int oldStateNumber) {
-		skin = new Skin();
+		camera = new OrthographicCamera();
 		// TODO Auto-generated method stub
 		font = new BitmapFont(Gdx.files.internal("data/whiteFont.fnt"), false);
 		skin.addRegions(ImageCache.atlas);
@@ -39,7 +45,8 @@ public class FightingState extends GameState{
 	@Override
 	public void render(float delta) {
 		// TODO Auto-generated method stub
-		bw.render(delta);
+		//bw.render(delta);
+		
 		stage.draw();
 	}
 
@@ -181,6 +188,12 @@ public class FightingState extends GameState{
 	@Override
 	public void touchUp(int screenX, int screenY, int pointer, int button) {
 		stage.touchUp(screenX, screenY, pointer, button);
+	}
+
+	@Override
+	public void touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -1,13 +1,13 @@
-package entities.characters;
+package entities.world.characters;
 
-import entities.GameCharacter;
+import entities.GameWorldCharacter;
 import gamestate.BoxWorld;
 import animations.GameAnimation;
 import animations.ImageCache;
 
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
-public class Leknaat extends GameCharacter {
+public class Leknaat extends GameWorldCharacter {
 
 	
 

@@ -21,7 +21,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.viewport.ExtendViewport;
 import com.orangeegames.suikorm.SuikodenRM;
 
-import entities.GameCharacter;
+import entities.GameWorldCharacter;
 
 public class ChatState extends GameState {
 
@@ -55,7 +55,7 @@ public class ChatState extends GameState {
 	private Stage stage;
 	
 	
-	public ChatState(BoxWorld ls, int state, GameCharacter character) {
+	public ChatState(BoxWorld ls, int state, GameWorldCharacter character) {
 		this.levelState = ls;
 		spriteBatch = (SpriteBatch) ls.mapRenderer.getBatch();
 		this.returnState = state;
@@ -276,5 +276,11 @@ public class ChatState extends GameState {
 	@Override
 	public void touchUp(int screenX, int screenY, int pointer, int button) {
 		stage.touchUp(screenX, screenY, pointer, button);
+	}
+
+	@Override
+	public void touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		
 	}
 }

@@ -146,7 +146,11 @@ public class Player extends DrawableBox2D {
 			this.setHeight(rightAnim.getKeyFrame(animTime, true).getRegionHeight()*SuikodenRM.scale);
 			currentDirection = faceRIGHT;
 		}
-		
+		else {
+			this.setRegion(currentWalkAnim.getKeyFrame(animTime, false));
+			this.setWidth(currentWalkAnim.getKeyFrame(animTime, false).getRegionWidth()*SuikodenRM.scale);
+			this.setHeight(currentWalkAnim.getKeyFrame(animTime, false).getRegionHeight()*SuikodenRM.scale);
+		}
 
 		
 	}

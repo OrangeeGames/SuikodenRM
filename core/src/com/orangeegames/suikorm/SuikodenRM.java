@@ -1,6 +1,7 @@
 package com.orangeegames.suikorm;
 
 import gamestate.GameStateManager;
+import utilities.Manager;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -9,10 +10,13 @@ public class SuikodenRM extends Game {
 	public static GameStateManager gsm;
 	public static boolean debug = false;
 	public static float scale = 1f;
+	public static Manager manager;
 	
 	@Override
 	public void create() {	
 		gsm = new GameStateManager(this);
+		manager = new Manager();
+		manager.init();
 		Gdx.input.setInputProcessor(gsm);
 		setScreen(gsm.getScreen());
 	}

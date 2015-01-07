@@ -12,6 +12,7 @@ import com.badlogic.gdx.Input;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL30;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g3d.decals.Decal;
 import com.badlogic.gdx.maps.MapLayer;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.objects.RectangleMapObject;
@@ -36,21 +37,25 @@ import com.orangeegames.suikorm.SuikodenRM;
 import entities.AbstractChest;
 import entities.Door;
 import entities.DrawableBox2D;
-import entities.GameCharacter;
+import entities.GameWorldCharacter;
 import entities.Player;
 import entities.Spawn;
 
 public class BoxWorld extends GameState {
 
 	World world;
-	protected OrthogonalCustomRenderer mapRenderer;
+	public OrthogonalCustomRenderer mapRenderer;
 	Box2DDebugRenderer box2drenderer;
-	OrthographicCamera camera;
+	public OrthographicCamera camera;
 	Player player;
 	ArrayList<TiledMapTileLayer> foregrounds, backgrounds, objectLayers;
 	ArrayList<DrawableBox2D> drawableBoxes;
-
+	ArrayList<GameWorldCharacter> characters;
+	
 	boolean disposeThis = false;
+	
+	float rotation = 0;
+	float zoom = 1;
 	
 	Door fromDoor;
 	Door nextDoor;
@@ -70,12 +75,15 @@ public class BoxWorld extends GameState {
 
 		drawableBoxes = new ArrayList<DrawableBox2D>();
 
+		characters = new ArrayList<GameWorldCharacter>();
+		
 		walkableDoors = new ArrayList<Door>();
 		
 		mapSpawns = new ArrayList<Spawn>();
 		
 		initiate(fromDoor);
 	}
+	
 	
 	
 	public void initiate(Door door) {
@@ -166,9 +174,10 @@ public class BoxWorld extends GameState {
 					float x = (mo.getRectangle().x + mo.getRectangle().width/2)*SuikodenRM.scale;
 					float y = (mo.getRectangle().y + mo.getRectangle().height/2)*SuikodenRM.scale;
 					
-					GameCharacter gc = CharacterGeneration.getCharacter((String) mo.getProperties().get("character"), this, x, y);
+					GameWorldCharacter gc = CharacterGeneration.getWorldCharacter((String) mo.getProperties().get("character"), this, x, y);
 					gc.setMessage(Integer.parseInt((String) mo.getProperties().get("startMessage")), Integer.parseInt((String) mo.getProperties().get("stopMessage")));
 					drawableBoxes.add(gc);
+					characters.add(gc);
 				}
 			}
 			
@@ -280,12 +289,19 @@ public class BoxWorld extends GameState {
 			if(!GameStateManager.PAUSED) {
 				world.step(1 / 60f, 8, 3);
 				player.update2(delta);
+				for(GameWorldCharacter gc : characters) {
+					gc.update(delta);
+				}
 			}
 			
-			camera.zoom = 1;
+			//camera.zoom = 5;
 			camera.position.set(player.getBody().getPosition().x + 7.9f*SuikodenRM.scale, player.getBody().getPosition().y - 50*SuikodenRM.scale, 0);
 			camera.update();
-	
+			
+			camera.rotate(rotation);
+			camera.zoom = zoom;
+			
+			
 			mapRenderer.setView(camera);
 			mapRenderer.getBatch().begin();
 			
@@ -413,6 +429,9 @@ public class BoxWorld extends GameState {
 			if(k == Keys.O) {
 				SuikodenRM.debug = !SuikodenRM.debug;
 			}
+			if(k == Keys.G) {
+				SuikodenRM.gsm.setFightState();
+			}
 		}
 	}
 
@@ -427,6 +446,10 @@ public class BoxWorld extends GameState {
 			if(k == Keys.UP) camera.rotate(10f, 1, 0, 0);
 			if(k == Keys.DOWN) camera.rotate(10f, -1, 0, 0);
 			if(k == Keys.RIGHT) camera.rotate(10f, 0, -1, 0);
+			if(k == Keys.PLUS) zoom -= 0.1f;
+			if(k == Keys.MINUS) zoom += 0.1f;
+			if(k == Keys.COMMA) rotation += 1.0f;
+			if(k == Keys.PERIOD) rotation -= 1.0f;
 		}
 	}
 
@@ -442,6 +465,14 @@ public class BoxWorld extends GameState {
 	
 	public World getWorld() {
 		return world;
+	}
+
+
+
+	@Override
+	public void touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		
 	}
 	
 }

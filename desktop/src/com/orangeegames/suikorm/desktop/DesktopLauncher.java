@@ -10,6 +10,7 @@ public class DesktopLauncher {
 		config.title = "SuikoTest";
 		config.width = 1280;
 		config.height = 720;
+		config.resizable = false;
 		new LwjglApplication(new SuikodenRM(), config);
 	}
 }
